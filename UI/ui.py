@@ -7,7 +7,8 @@ import pickle
 # ================================
 # Load Logistic Regression Model
 # ================================
-with open(r"D:\manu project\new\logistic_model.pkl", "rb") as f:
+# Load pickle from the same folder as ui.py
+with open("defect_model.pkl", "rb") as f:
     saved = pickle.load(f)
     model = saved["model"]
     scaler = saved["scaler"]
